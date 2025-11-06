@@ -24,9 +24,16 @@ def listar_comandos_git_basicos():
     """
     Retorna uma lista com os principais comandos básicos do Git.
     Exemplo de saída:
-    ["git init", "git add", "git commit", "git status", "git push"]
     """
-    pass
+    lista_comandos = [
+        "git init", 
+        "git add",
+        "git commit", 
+        "git status", 
+        "git push"
+    ]
+
+    print(lista_comandos)
 
 
 def criar_mensagem_commit(funcao_nome):
@@ -60,3 +67,4 @@ def gerar_relatorio_final(funcoes_concluidas):
     pass
 
 mostrar_mensagem_inicial()
+listar_comandos_git_basicos()
