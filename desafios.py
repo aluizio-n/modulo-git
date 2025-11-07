@@ -73,9 +73,10 @@ def gerar_relatorio_final(funcoes_concluidas):
     ->
     "Desafio concluído! 2 funções implementadas com sucesso."
     """
-    pass
+    print(f"Desafio concluido! {len(funcoes_concluidas)} funçoes implementadas com sucesso.")
 
 mostrar_mensagem_inicial()
 listar_comandos_git_basicos()
 criar_mensagem_commit("mostrar_mensagem_inicial")
 verificar_tag_valida("b1.0")
+gerar_relatorio_final(["mostrar_mensagem_inicial","listar_comandos_git_basicos","criar_mensagem_commit","verificar_tag_valida"])
