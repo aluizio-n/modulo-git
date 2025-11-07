@@ -51,7 +51,16 @@ def verificar_tag_valida(tag):
     Verifica se uma tag está no formato 'vX.Y' (ex: v1.0, v2.1).
     Retorna True se o formato for válido, caso contrário False.
     """
-    pass
+    
+    if tag[0] == "v":
+        if tag[1] in ["1","2","3","4","5","6","7","8","9"]:
+            if tag[2] == ".":
+                if tag[3] in ["0","1","2","3","4","5","6","7","8","9"]:
+                    print("True")
+                    return True
+    else:
+        print("False")
+        return False
 
 
 def gerar_relatorio_final(funcoes_concluidas):
@@ -69,3 +78,4 @@ def gerar_relatorio_final(funcoes_concluidas):
 mostrar_mensagem_inicial()
 listar_comandos_git_basicos()
 criar_mensagem_commit("mostrar_mensagem_inicial")
+verificar_tag_valida("b1.0")
